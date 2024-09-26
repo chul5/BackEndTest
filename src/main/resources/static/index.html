@@ -1,0 +1,19 @@
+<!DOCTYPE html><html xmlns:th="http://www.thymeleaf.org"><head>
+    <meta charset="UTF-8">
+    <title>File Upload</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></head><body>
+<div class="container">
+    <h2>File Upload Form</h2>
+    <form th:action="@{/file/upload}" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="file">Choose file to upload:</label>
+            <input type="file" class="form-control-file" id="file" name="file" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Upload</button>
+    </form>
+</div>
+
+<div class="container" style="margin-top: 20px;">
+    <h3>Upload Result</h3>
+    <p th:if="${fileInfo != null}" th:text="${fileInfo}">File upload result will be displayed here.</p>
+</div></body></html>
