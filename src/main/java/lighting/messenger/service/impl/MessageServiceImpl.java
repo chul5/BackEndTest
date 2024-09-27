@@ -4,12 +4,13 @@ import lighting.messenger.domain.model.Message;
 import lighting.messenger.domain.model.MessageFile;
 import lighting.messenger.domain.model.RoomMember;
 import lighting.messenger.dto.ChatMessageDTO;
+import lighting.messenger.dto.EmpDTO;
 import lighting.messenger.repository.MessageFilesRepository;
 import lighting.messenger.repository.MessageRepository;
 import lighting.messenger.repository.RoomMemberRepository;
-import lighting.messenger.service.MessageService;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.time.format.DateTimeFormatter;
