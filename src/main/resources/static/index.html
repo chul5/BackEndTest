@@ -4,16 +4,16 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></head><body>
 <div class="container">
     <h2>File Upload Form</h2>
-    <form th:action="@{/file/multipart/upload}" method="post" enctype="multipart/form-data">
+    <form th:action="@{/document/file/upload}" method="post" enctype="multipart/form-data">
         <div class="form-group">
             <label for="file">Choose file to upload:</label>
             <input type="file" class="form-control-file" id="file" name="file" required>
         </div>
         <button type="submit" class="btn btn-primary">Upload</button>
     </form>
-    <form th:action="@{/file/awsmultipart/upload}" method="post" enctype="multipart/form-data">
+    <form th:action="@{/document/aws/upload}" method="post" enctype="multipart/form-data">
         <div class="form-group">
-            <label for="file2">Choose file to upload:</label>
+            <label for="file2">Choose file to AWS upload:</label>
             <input type="file" class="form-control-file" id="file2" name="file" required>
         </div>
         <button type="submit" class="btn btn-primary">Upload</button>
